@@ -1,1 +1,11 @@
-<p>planet-list works!</p>
+<div>
+  <mat-list>
+    @for (planet of planets; track planet.planetName) {
+    <li>
+      <button (click)="displayPlanet(planet)">{{ planet.planetName }}</button>
+    </li>
+    } @empty {
+    <li>There are no planets.</li>
+    }
+  </mat-list>
+</div>

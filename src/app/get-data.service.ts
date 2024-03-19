@@ -6,10 +6,6 @@ import { planets } from '../assets/data/planets';
   providedIn: 'root',
 })
 export class GetDataService {
-  constructor() {}
-
-  planets: Array<meplanet> = planets;
-
   getPlanets() {
     return planets;
   }
