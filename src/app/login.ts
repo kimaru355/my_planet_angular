@@ -1,4 +1,4 @@
-export class Me {
+export class Login {
   constructor(
     public name: string,
     public studentNumber: number,

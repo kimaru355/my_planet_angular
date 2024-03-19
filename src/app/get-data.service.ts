@@ -1,9 +1,16 @@
 import { Injectable } from '@angular/core';
+import { meplanet } from './myplanets';
+import { planets } from '../assets/data/planets';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class GetDataService {
+  constructor() {}
 
-  constructor() { }
+  planets: Array<meplanet> = planets;
+
+  getPlanets() {
+    return planets;
+  }
 }

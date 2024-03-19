@@ -1,4 +1,4 @@
-export interface myplanet {
+export interface meplanet {
   planetName: string;
   planetColor: string;
   planetRadiusKM: number;
